@@ -9,10 +9,18 @@
   <meta name="description" content="TODO: Portfolio website ...">
 
   <link rel="stylesheet" href="./stylesheets/main.scss">
+  <link rel="stylesheet" href="/custom.scss">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Palatino">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
+  <!-- Your HTML goes here 
   <h1 class="display-2 text-center my-5 py-5">
     <span class="d-block py-5 mt-5">
       <i class="bi bi-filetype-html text-primary"></i> / 
@@ -21,8 +29,256 @@
     </span>
     
     Portfolio Website
-  </h1>
+  </h1>-->
+
+  <!--NAV SECTION-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand px-4" href="index.html"><span class="mynamelogo">Martha</span> <br> <span class="allura">De
+          La
+          Vega</span> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--NAV SECTION-->
+
+  <!--JUMBOTRON-->
+  <div class="jumbotron py-5 mobilejumbotron">
+    <h1 class="display-4 text-center py-5">Discover my creative explorations and collections of my projects.</h1>
+    <p class="lead text-center pt-4">
+      <a class="btn btn-primary btn-lg shadow viewprojectbtn" href="#mylatestwork" role="button">VIEW PROJECTS</a>
+    </p>
+  </div>
+  <!--JUMBOTRON-->
+
+
+  <!--JUMBOTRON DESKTOP VIEW-->
+  <div class="jumbotron py-5 desktopjumbo">
+    <div class="container d-flex align-items-center justify-content-center">
+      <div class="col-lg-6 .d-md-none .d-lg-block .d-sm-none">
+        <img class="desktoppud shadow" src="images/dog.png" alt="dog">
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 pt-5 mt-3 text-center">
+        <div class="d-flex .d-md-none .d-lg-block .d-sm-none justify-content-center">
+          <p class="designer_codertext">Designer</p>
+          <div class="heroline mx-5"></div>
+          <p class="designer_codertext">&lt; Coder &gt;</p>
+        </div>
+        <div>
+          <h1 class="display-4 text-center py-5">Discover my creative explorations and collections of my projects.
+          </h1>
+          <p class="lead text-center pt-4">
+            <a class="btn btn-primary btn-lg shadow viewprojectbtn" href="#mylatestwork" role="button">VIEW
+              PROJECTS</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--JUMBOTRON DESKTOP VIEW-->
+
+  <!--WELCOME SECTION-->
+  <section class="container py-5 text-center">
+    <h2 class="allura pb-3 mobileheader">Welcome!</h2>
+    <img class="pud shadow mobilejumbotron" src="images/dog.png" alt="dog">
+    <h2 class="allura text-center pt-5 mobileheader">Explore My Work.</h2>
+    <h2 class="allura desktopheader display-4">Welcome! Explore my work.</h2>
+
+    <p class="pt-5 text-size">I’m excited to share my journey as a web designer with you. Here you’ll find a showcase of
+      my web
+      design
+      projects, highlights of my skills and creativity.
+    </p>
+
+    <p class="pb-5 text-size">I really enjoy bringing my ideas and inspirations to life and I am eager to keep growing
+      my skills
+      and passion
+      for web and graphic design while expanding my portfolio.</p>
+  </section>
+  <!--WELCOME SECTION-->
+
+
+  <!--MY SKILLS-->
+  <section class="skills pt-5 text-center">
+    <h2 class="text-primary pb-2">My Skills</h2>
+    <div class="line container"></div>
+    <ul class="py-5">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Bootstrap</li>
+      <li>SASS</li>
+      <li>JavaScript</li>
+      <li>Adobe XD</li>
+      <li>Adobe Photoshop</li>
+      <li>Adobe Illustrator</li>
+      <li>Figma</li>
+      <li>GitHub</li>
+    </ul>
+  </section>
+
+  <div class="white py-4"></div>
+  <div class="brown py-3"></div>
+  <!--MY SKILLS-->
+
+  <!--MY LATEST WORK-->
+  <section id="mylatestwork">
+    <h2 class="text-center pt-5 text-primary">My Latest Work</h2>
+    <div class="line container"></div>
+
+    <div class="container py-5 cards">
+      <div class="row gap-4 col d-flex justify-content-center">
+        <div class="card shadow mb-4 text-center" style="width: 18rem;">
+          <img src="images/cardeal.png" class="card-img-top" alt="CarDeal site">
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">CarDeal is a website where people can sell a car in any condition for cash or trade
+              their vehicle. It is a single page site with a free online valuation form, how it works, about,
+              testimonials, and faqs. It was created with some SASS and in mobile first approach.</p>
+            <a href="https://exquisite-yeot-54df5b.netlify.app/" class="btn btn-primary shadow workbutton  mt-auto">VIEW
+              WEBSITE</a>
+          </div>
+        </div>
+
+        <div class="card shadow mb-4 text-center" style="width: 18rem;">
+          <img src="images/courseoffun.png" class="card-img-top" alt="CourseOfFun site">
+          <div class="card-body d-flex flex-column">
+            <p>CourseOfFun is a website where people can view several arts and crafts courses, course description,
+              price, FAQ, who teaches them, and their background. This site is JavaScript loaded. I used local<span
+                id="dots">...</span><span id="more">storage for the option to sign in for returning customers. It was
+                designed to have 6 pages with a drop menu. In the drop down menu, links to a certain course go directly
+                to the page section via ID.</span></p>
+            <button onclick="myFunction()" id="myBtn" class="mb-3">Read more</button>
+            <a href="https://eloquent-horse-9cf326.netlify.app/" class="btn btn-primary shadow workbutton mt-auto">VIEW
+              WEBSITE</a>
+          </div>
+        </div>
+
+        <script>
+          function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+          
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Read more"; 
+              moreText.style.display = "none";
+            } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Read less"; 
+              moreText.style.display = "inline";
+            }
+          }
+          </script>
+
+        <div class="card shadow mb-4 text-center" style="width: 18rem;">
+          <img src="images/advanced.png" class="card-img-top" alt="AdvancedFlight site">
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">AdvancedFlight is a website where you can book flights and resorts in some of the most
+              beautiful places in the world, and rent vehicles. The site is created mobile first approach, with a login
+              area
+              and SASS heavy.</p>
+            <a href="https://romantic-bhabha-a02d68.netlify.app/"
+              class="btn btn-primary shadow workbutton  mt-auto">VIEW
+              WEBSITE</a>
+          </div>
+        </div>
+
+        <div class="card shadow mb-4 text-center" style="width: 18rem;">
+          <img src="images/petz.png" class="card-img-top" alt="Petz Photography site">
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">Petz Photography is a prototype created for a site of a photographer passionate to
+              photograph peoples pets. Selling digital and physical images. The protypes are laid out in mobile, tablet,
+              and desktop.</p>
+            <a href="https://xd.adobe.com/view/99ed0bf7-1646-4578-b93a-a0e172d6d645-ccbe/"
+              class="btn btn-primary shadow workbutton  mt-auto">VIEW PROTOTYPE</a>
+          </div>
+        </div>
+
+        <div class="card shadow mb-4 text-center" style="width: 18rem;">
+          <img src="images/ducks.png" class="card-img-top" alt="Ducks site">
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">For Duck's Sake is a prototype of a site dedicated to rescue ducks and other close
+              species. The protypes are liad out in mobile, tablet, and desktop.</p>
+            <a href="https://xd.adobe.com/view/8fb57dfe-b146-4439-b44b-0f6617231f13-dae6/"
+              class="btn btn-primary shadow workbutton  mt-auto">VIEW PROTOTYPE</a>
+          </div>
+        </div>
+
+        <div class="card shadow text-center mb-4" style="width: 18rem;">
+          <img src="images/kobe.png" class="card-img-top" alt="Kobe site">
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">Kobe Teppanyaki is a restaurant where you can order off their menu online prototype
+              with mobile, tablet, and desktop layouts.</p>
+            <a href="https://xd.adobe.com/view/1689ec7f-4522-44de-9acf-2a496b342e9d-43da/"
+              class="btn btn-primary shadow workbutton mt-auto">VIEW PROTOTYPE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--MY LATEST WORK-->
+
+  <!--CERTIFICATIONS-->
+  <section class="cert py-5">
+    <h2 class="text-center text-primary">Certifications</h2>
+    <div class="line container"></div>
+
+    <h3 class="text-center pt-5">Web Essentials</h3>
+    <p class="container pt-1 text-size">Covers the foundational skills and knowledge in web development and design. It
+      includes
+      learning HTML, CSS, basis JavaScript, and best practices for creating accessible and responsive websites.</p>
+
+    <h3 class="text-center pt-5">User Experience Design</h3>
+    <p class="container pt-1 text-size">Proficiency in understanding user behaviors, designing interfaces that meet user
+      needs,
+      enhancing overall usability and satisfaction in digital products and/or services.</p>
+
+    <p class="container text-size">Covers skills such as user research wire framing, prototyping, usability testing, and
+      interface
+      design. </p>
+  </section>
+  <!--CERTIFICATIONS-->
+
+  <!--FOOTER-->
+  <footer class="row">
+    <div class="social text-center col-lg-2 col-md-12 col-sm-12 pt-3">
+      <a href="mailto:orozco_rose22@yahoo.com">
+        <h1><i class="bi bi-envelope-fill"></i></h1>
+      </a>
+      <a href="https://www.instagram.com/martha.r.orozco.5?igsh=NzFoYWowbXY3Mmc3">
+        <h1><i class="bi bi-instagram"></i></h1>
+      </a>
+      <a href="https://www.facebook.com/martha.r.orozco.5">
+        <h1><i class="bi bi-facebook"></i></h1>
+      </a>
+    </div>
+
+    <div class="col-lg-6"></div>
+
+    <div class="aside col-lg-2 col-md-6 col-sm-12">
+      <p class="text-secondary leftcontent">© Copyright 2024</p>
+    </div>
+
+    <div class="aside col-lg-2 col-md-6 col-sm-12">
+      <p class="text-secondary rightcontent">Martha De La Vega</p>
+    </div>
+  </footer>
+  <!--FOOTER-->
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
+
 </html>
